@@ -1,4 +1,4 @@
 # ChatRoom
 Socket.io chatroom demo 
 
-In order to test: run ' node index.js ' in project directory, project then available at localhost:3000 
+In order to test: with node installed, run ' node index.js ' in project directory, then project is available at localhost:3000 
