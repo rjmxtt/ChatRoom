@@ -9,9 +9,7 @@ app.use(
 )
 
 io.on('connection', socket => {
-    socket.on('message', message => {
-        io.emit('message', message)
-    })
+    console.log('Some client connected')
 })
 
 app.get('/', (req, res, next) => {
