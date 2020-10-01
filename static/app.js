@@ -9,16 +9,9 @@ message.addEventListener('submit', e => {
     messageInput.value = ''
 })
 
-const messageThread = document.querySelector('.message-thread')
 
-const render = ({message, id}) => {
-    const div = document.createElement('div')
-    div.classList.add('message-text')
-    div.innerText = message
-    messageThread.appendChild(div)
-}
 
-socket.on('message', data => {
-    render(data)
+socket.on('message', message => {
+    console.log(message)
 })
 
